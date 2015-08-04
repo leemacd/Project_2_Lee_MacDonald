@@ -1,0 +1,549 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	font-size: 14px;
+	font-family: 'Droid Serif', serif;
+	text-align: center;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 3px;
+	margin: 10px;
+}
+h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+h5 {
+	font-family: 'Montserrat', sans-serif;
+}
+h6 {
+	font-family: 'Droid Serif', sans-serif;
+	font-style: italic;
+	font-weight: 100;
+	color: lightgrey;
+	margin: 0;
+}
+label {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*Header Styles*/
+.main-header {
+	background-image: url('Creative Agency/assets/home page/hero.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.main-header h2 {
+	position: absolute;
+	top: 2%;
+	left: 12%;
+}
+.main-header h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	color: white;
+	padding: 15%;
+	margin: 0;
+	letter-spacing: 15px;
+}
+.main-nav {
+	padding: 0;
+	margin: 0 10% 0 0;
+	display: inline-block;
+	float: right;
+}
+.main-nav a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+.main-nav li {
+	display: inline;
+}
+.rectangle {
+	width: 30px;
+	height: 80px;
+	background: black;
+	position: absolute;
+	z-index: 20;
+}
+.one {
+	top: 50%;
+	left: 0;
+}
+.two {
+	top: 50%;
+	right: 0;
+}
+
+/*About Styles*/
+.about {
+	padding: 10% 0 15% 0;
+}
+.about p {
+	margin: 0 auto;
+	width: 75%;
+	color: lightgrey;
+}
+.pics {
+	position: relative;
+	margin: 40px 0;
+}
+.box {
+	background: #ffd96e;
+	width: 230px;
+	height: 280px;
+	margin: 0 auto;
+}
+.about img {
+	position: absolute;
+	top: 25px;
+	left: 452px;
+}
+
+/*Meters Section*/
+.meters {
+	background: lightgrey;
+	padding: 5% 0;
+}
+.meters ul {
+	list-style-type: none;
+	width: 70%;
+	margin: 0 auto;
+}
+.line {
+	border: 2px solid black;
+	width: 25%;
+	margin: 0 auto;
+}
+.meters li {
+	background: white;
+	width: 23%;
+	height: 350px;
+	float: left;
+	padding: 0 10px 10px 10px;
+	display: block;
+	margin: 0 1%;
+}
+.meters .meter {
+	width: 100%;
+}
+.meters li:nth-child(2n+1) {
+	padding-bottom: 26px;
+}
+.meters li:nth-child(even) h3:nth-of-type(2) {
+	margin-top: 0;
+}
+
+/*What we do Styles*/
+.what-we-do {
+	padding: 10% 0 0 0;
+}
+.border {
+	border: 1px solid black;
+	margin: 15px auto;
+	width: 5%;
+}
+.service-container {
+	width: 75%;
+	margin: 0 auto;
+}
+.service {
+	float: left;
+	text-align: left;
+	width: 45%;
+	margin: 5% 1%;
+	padding-left: 100px;
+}
+.service:first-child {
+	background: url('Creative Agency/assets/home page/icon-01-brand.png') no-repeat top 25px left 15px;
+}
+.service:nth-child(2) {
+	background: url('Creative Agency/assets/home page/icon-02-web.png') no-repeat top 25px left 15px;
+}
+.service:nth-child(3) {
+	background: url('Creative Agency/assets/home page/icon-03-design.png') no-repeat top 25px left 15px;
+}
+.service:last-child {
+	background: url('Creative Agency/assets/home page/icon-04-photography.png') no-repeat top 25px left 15px;
+}
+.below {
+	border-bottom: 2px solid black;
+	width: 10%;
+}
+/*Facts Section*/
+.facts {
+	background-image: url('Creative Agency/assets/home page/facts-bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.facts-container {
+	display: inline-block;
+	width: 50%;
+	float: left;
+	margin: 5% 5% 5% 11%;
+}
+.our-facts {
+	text-align: left;
+	width: 30%;
+}
+	.our-facts h2 {
+		margin: 0;
+	}
+	.our-facts h6 {
+		color: black;
+		margin-top: 10px;
+	}
+.bottom {
+	border: 2px solid black;
+	width: 20%;
+	margin: 15px 0;
+}
+.numbers-container {
+	margin-top: 50px;
+}
+.numbers {
+	width: 30%;
+	text-align: left;
+	float: left;
+}
+	.numbers h2 {
+		margin: 0;
+	}
+/*Contact Section*/
+.contact {
+	padding: 10% 0;
+}
+.contact h6 {
+	color: black;
+	margin-bottom: 15px;
+}
+.contact p {
+	letter-spacing: 3px;
+	font-size: 40px;
+	color: #92fcf9;
+	font-family: 'Montserrat', sans-serif;
+}
+.line-below {
+	border: 2px solid black;
+	width: 3%;
+	margin: 10px auto;
+}
+input[type=text], 
+input[type=email] {
+	border: none;
+	width: 30%;
+	margin: 10px 0;
+}
+form {
+	margin: 0 10%;
+}
+.form {
+	display: inline-block;
+	width: 30%;
+	border-bottom: 1px solid lightgrey;
+	text-align: left;
+	margin: 10px;
+}
+.message {
+	display: block;
+	width: 95%;
+	margin: 35px 0 50px 28px;
+}
+input[type=submit] {
+	display: block;
+	margin: 30px auto;
+	padding: 10px 80px;
+	background: black;
+	color: white;
+	font-family: 'Montserrat', serif;
+	text-transform: uppercase;
+	border: none;
+}
+
+/*Footer Styles*/
+.footer {
+	background: #ffd96d;
+}
+.footer h2 {
+	padding-top: 4%;
+}
+.footer li {
+	display: inline;
+}
+.footer a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Montserrat', serif;
+	padding: 20px;
+	font-size: 11px;
+	letter-spacing: 1.5px;
+}
+.footer h6 {
+	padding-bottom: 40px;
+	color: black;
+	margin-top: 20px;
+}
+/*End of Home Page*/
+
+/*Start of Work Page*/
+.work-header {
+	padding-bottom: 10%;
+}
+.work-header h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	color: black;
+	padding: 15% 15% 0 15%;
+	margin: 0;
+	letter-spacing: 15px;
+}
+.work-header h2 {
+	position: absolute;
+	top: 2%;
+	left: 12%;
+	}
+.work-header h6 {
+	margin-top: 25px;
+	}
+.work-nav {
+	padding: 0;
+	margin: 0 10% 0 0;
+	display: inline-block;
+	float: right;
+}
+.work-nav a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+.work-nav li {
+	display: inline;
+}
+.work {
+	margin: 5%;
+}
+.work h3 {
+	margin: 5% 0;
+}
+.description {
+	width: 60%;
+	text-align: left;
+	float: left;
+}
+.work p {
+	color: lightgrey;
+}
+.description p {
+	margin: 35px 0;
+}
+.spanish {
+	color: black;
+	font-style: italic;
+}
+.book {
+	width: 700px;
+}
+.project-details {
+	width: 25%;
+	float: left;
+	text-align: left;
+	margin-left: 10%;
+}
+.project-details h3 {
+	margin: 30px 0;
+}
+.project-details ol {
+	padding: 0;
+	/*list-style-position: inside;*/
+	list-style-type: none;
+	color: lightgrey;
+}
+.list-numbers {
+	color: black;
+	margin-right: 5px;
+}
+.project-details h5 {
+	margin-bottom: 0;
+}
+.project-details p {
+	margin-bottom: 30px;
+}
+.project-details img {
+	margin: 20px 0 40px 0;
+}
+.project-details a {
+	display: block;
+	text-decoration: none;
+	border: 1px solid white;
+	color: white;
+	background: #92fcf9;
+	padding: 10px 20px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	width: 270px;
+}
+/*style numbers using ::before*/
+/*End of Work Page Styles*/
+
+/*Start of Blog Page Styles*/
+/*Header Styles*/
+.blog-header {
+	padding-bottom: 10%;
+	background-image: linear-gradient(rgba(146, 252, 249, 0.9), rgba(146, 252, 249, 0.9)), url('swirl_pattern/swirl_pattern.png');
+}
+.blog-header h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	color: white;
+	padding: 15% 15% 0 15%;
+	margin: 0;
+	letter-spacing: 15px;
+}
+.blog-header h2 {
+	position: absolute;
+	top: 2%;
+	left: 12%;
+	}
+.blog-nav {
+	padding: 0;
+	margin: 0 10% 0 0;
+	display: inline-block;
+	float: right;
+}
+.blog-nav a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+.blog-nav li {
+	display: inline;
+}
+/*End of Header Styles*/
+
+/*Section Styles*/
+.top {
+	padding-top: 10%;
+}
+.top h6 {
+	color: black;
+	margin: 1%;
+}
+.last-line {
+	border: 2px solid black;
+	width: 5%;
+	margin: 0 auto 7% auto;
+}
+
+/*Blog Post Styles*/
+.title {
+	margin-bottom: 3%;
+}
+.title h3 {
+	letter-spacing: 3px;
+}
+.title p {
+	display: inline;
+	margin: 12px;
+	font-style: italic;
+}
+.blog-blurb p {
+	color: lightgrey;
+	margin: 3% 17%;
+}
+.outside-border {
+	border: 1px solid black;
+	margin: 5% 15%;
+	padding: 2%;
+}
+.inside-border {
+	background-image: url('swirl_pattern/swirl_pattern.png');
+	padding: 5%;
+}
+.inside-border img {
+	margin: 3%;
+}
+.inside-border blockquote {
+	font-size: 16px;
+	font-style: italic;
+}
+.inside-border h5 {
+	margin: 4% 0;
+}
+.blog-two-quote {
+	font-style: normal;
+	font-style: 'Montserrat', sans-serif;
+}
+.beautiful a {
+	margin: 5% auto 8% auto;
+	border: 1px solid black;
+	padding: 1% 7%;
+	background: black;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	display: block;
+	width: 22%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
